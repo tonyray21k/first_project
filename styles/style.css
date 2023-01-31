@@ -1,0 +1,86 @@
+div,
+h1 {
+  border: 1.5px dotted red;
+}
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  position: relative;
+  /* выше установили ограничения для секции */
+}
+
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+
+}
+.header__title{
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  width: 730px;
+  z-index: 3;
+}
+.header__subtitle{
+  width:388px ;
+  position: absolute;
+  left:64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 3;
+}
+.header__subtitle-link{
+  text-decoration: none;
+}
+.header__main-illustration{
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  object-fit: cover;
+  object-position: right bottom;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.header__square-pic{
+  position: absolute;
+  top:64px;
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+
+}
+
